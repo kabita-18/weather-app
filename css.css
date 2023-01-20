@@ -1,0 +1,64 @@
+<body>
+
+    <main class="full-screen-main  can-zoom zoomed">
+        <div class="row">
+            <img src="img.jpg" alt="weatherforcast" style="width: 100%">
+
+        </div>
+
+        <div class="row">
+            <img src="img1.jpg" alt="temperature" style="width: 100%">
+            
+        </div>
+        <div class="row">
+            <img src="img2.jpg" alt="temperature" style="width: 100%">
+            
+        </div>
+
+    </main>
+   
+    <script src="script.js"></script>
+</body>
+</html>
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.full-screen-main.zoomed {
+    width: 100%;
+    padding-right: 0;
+    overflow-x: scroll;
+}
+@media only screen and (min-width: 960px).full-screen-main{
+    padding: 20px 40px;
+}
+
+.full-screen-main {
+    position: relative;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #e16906;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.row{
+    width: 600px;
+    height: 180px;
+    /* border: 2px solid #FD841F; */
+    margin: 20px;
+
+}
+img{
+    height: 100%;
+    padding-top: 0px;
+    margin:auto;
+    border-radius: 2px;
+    border: 3px solid #3E6D9C;
+    opacity:8;
+    
+}
+
